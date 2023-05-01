@@ -1,0 +1,41 @@
+*{
+   margin: 0;
+}
+
+body{
+    overflow:hidden;
+    background-image: url('Details.jpeg');
+}
+
+.Details{
+    align-items: center;
+    justify-content: center;
+    margin-left:300px;
+    margin-top: 0px;
+}
+
+h1{
+    color:rgb(74, 74, 150);
+    font-size: 80px;
+   
+    font-family: 'Castoro Titling', cursive;
+}
+
+.Skills{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.Cerf{
+    font-size: 20px;
+}
+
+.lang{
+    font-size: 20px;
+}
+
+.edu{
+    font-size: 30px;
+    color: rgb(48, 67, 33);
+}

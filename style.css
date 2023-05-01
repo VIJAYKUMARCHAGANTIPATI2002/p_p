@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+body{
+
+    overflow: hidden;
+    
+    background-image: url('index_img.jpeg');
+    background-repeat: no-repeat;
+    /* height: 90%; */
+    width: 100%;
+    
+  }
+
+.container{
+    width: 100%;
+    max-height: 80vh;
+    
+    background-color: #f3f5f8;
+
+}
+nav{
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 80px;
+    line-height: 80px;
+    z-index: index 111;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    /* justify-content: center; */
+
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #c1cfc3;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b{
+    font-size: 70px;
+    color: #d59e9e;
+}
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+.navItems li a{
+    font-weight: bold;
+    font-size: 25px;
+    color: #4aa2d2;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems li:hover a,.links a :hover{
+    color: #f3ed47;
+}
+
+.links a{
+
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#57b49f,rgb(44, 102, 173));
+    animation: object 1s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#2a96ba,rgb(138, 120, 121));
+    animation: object1 4s linear infinite;
+}
+
+@keyframes object {
+
+    50%{
+        left: -13%;
+        top: 41%;
+
+    }
+    
+}
+@keyframes object1 {
+
+    50%{
+        left: 30%;
+        top: 41%;
+
+    }
+    
+}
+
+
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #80ce14;
+    font-weight: lighter;
+}
+
+.topline::after{
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #e68b8b;
+}
+
+h1{
+    display: block;
+    font-size: 6.5em;
+    font-weight: 900;
+    color: #44d4b5;
+}
+.multiText{
+    color: #e41c3d;
+    text-transform: capitalize;
+}
+
+p{
+
+    display: block;
+    width: 90%;
+    font-size: 1,2em;
+    color: #5291b3;
+
+}
+
+.btns{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 150px;
+    gap: 20px;
+
+}
+
+button{
+    outline: none;
+    /* font-weight: lighter; */
+    border: solid #000 3px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #248ec7;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+button:hover{
+    background-color: #d59e9e;
+}
+
+.imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+
+}
+.imgbox img {
+    position: relative;
+    height: 100%;
+    
+    width: calc(130% - 100px);
+    top: -550px;
+    right: 0px;
+    left: 1080px;
+    /* transform: rotate(0deg); */
+    animation: animationUser 2s linear 1;
+    border-radius: 40%;
+
+}
+
+@keyframes animationUser {
+50%{
+    right: 30px;
+    top: -90px;
+
+    
+}
+}
+.imgbox #splash
+
+{
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(-30%,-50%) rotate(0deg);
+    width: 100%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+} 
+
+
+ @keyframes animate {
+    50%{
+        top:49%;
+        left: 51%;
+        width: 155%;
+    }
+}  
+/* 
+.p_i{
+    font-weight: bold;
+    font-size: 30px;
+} */
+
+/* @media screen and (min-width: 1280px) , screen and (max-width: 900px) {
+    #yourID{  overflow-x: hidden; overflow-y: hidden; }                     
+} */
+
+.pi{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 -5px 20px #ffffff;
+}
+h2{
+    font-size: 29px;
+    font-weight: bold;
+    text-shadow: 0 -5px 20px #ffffff;
+}
